@@ -1,0 +1,55 @@
+.canvas-shell::before,
+.canvas-shell::after {
+  content: "";
+  position: absolute;
+  inset: auto;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  filter: blur(22px);
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.canvas-shell::before {
+  top: -32px;
+  left: -24px;
+  background: rgba(150, 0, 24, 0.35);
+}
+
+.canvas-shell::after {
+  right: -28px;
+  bottom: -32px;
+  background: rgba(184, 29, 61, 0.24);
+}
+
+.modal-dialog h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+}
+
+.modal-dialog p {
+  margin: 0;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.pause-menu,
+.game-over-menu,
+.settings-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.easter-egg {
+  position: fixed;
+  inset: auto 1rem 1rem auto;
+  padding: 0.8rem 1rem;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.05);
+  color: var(--text-muted);
+  backdrop-filter: blur(10px);
+}

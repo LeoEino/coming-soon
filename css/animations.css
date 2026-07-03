@@ -1,0 +1,55 @@
+@keyframes drift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-20px, 20px, 0);
+  }
+}
+
+@keyframes pulseGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(184, 29, 61, 0.22);
+  }
+  50% {
+    box-shadow: 0 0 0 12px rgba(184, 29, 61, 0);
+  }
+}
+
+@keyframes floatParticle {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-120px) translateX(18px);
+    opacity: 0;
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hero,
+.modal-dialog,
+.countdown-item {
+  animation: gradientShift 14s ease infinite;
+  background-size: 200% 200%;
+}
+
+.button-primary {
+  animation: pulseGlow 2.2s infinite;
+}

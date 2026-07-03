@@ -1,0 +1,90 @@
+@media (max-width: 980px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .site-header {
+    flex-direction: column;
+    gap: 0.8rem;
+    border-radius: var(--radius-lg);
+  }
+
+  .site-nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .countdown {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .hero {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .page-shell {
+    padding-inline: 0.8rem;
+  }
+
+  .site-header {
+    padding: 0.95rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.2rem, 10vw, 3rem);
+  }
+
+  .subtitle {
+    font-size: 0.98rem;
+  }
+
+  .countdown {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .social-links {
+    gap: 0.6rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .hero {
+    padding: 3rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .page-shell {
+    padding-inline: 3rem;
+  }
+
+  .hero {
+    max-width: 1400px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
